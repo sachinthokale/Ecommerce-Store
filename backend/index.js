@@ -25,11 +25,13 @@ const __dirname1 = path.resolve();
 
 console.log("if running");
 // Serve static files from the 'dist' folder
-app.use(express.static(path.join(__dirname1, "frontend", "dist")));
+app.use(express.static(path.join(__dirname1, "..", "frontend", "dist")));
 
 // Handle other routes by serving the 'index.html' file
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname1, "frontend", "dist", "index.html"));
+  res.sendFile(
+    path.resolve(__dirname1, "..", "frontend", "dist", "index.html")
+  );
 });
 
 // --------Deployment---------
