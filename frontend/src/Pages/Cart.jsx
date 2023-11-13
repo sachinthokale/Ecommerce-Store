@@ -15,7 +15,6 @@ const Cart = () => {
 
   console.log(items);
   const handledeleteFromCart = (itemId) => {
-    console.log(itemId);
     dispatch(deleteFromCart(itemId));
   };
 

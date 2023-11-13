@@ -23,18 +23,17 @@ app.use("/api/product", productRoutes);
 
 const __dirname1 = path.resolve();
 
-if (process.env.NODE_ENV === "production") {
-  console.log("if running");
-  app.use(express.static(path.join(__dirname1, "/frontend/build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"));
-  });
-} else {
-  console.log("not running");
-}
+console.log("if running");
+// Serve static files from the 'dist' folder
+app.use(express.static(path.join(__dirname1, "dist")));
+
+// Handle other routes by serving the 'index.html' file
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname1, "dist", "index.html"));
+});
 
 // --------Deployment---------
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
   console.log(`APP RUNNING ON PORT ${process.env.PORT}`);
 });
