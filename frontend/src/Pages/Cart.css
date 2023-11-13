@@ -1,0 +1,127 @@
+.cart {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #212529;
+  /* border-top: 1px solid white; */
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.cart-table-head {
+  width: 100%;
+  border-bottom: 1px solid white;
+  height: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.cart-table-body {
+  width: 100%;
+  height: fit-content;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.cart-card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+}
+.cart-card > img {
+  width: 140px;
+  height: 140px;
+}
+.card-desc {
+  height: 140px;
+  color: white;
+  width: 28%;
+  padding: 10px;
+  /* border: 1px solid white; */
+}
+.card-desc > h3 {
+  color: #ff4800;
+}
+.cart-price {
+  /* border: 1px solid white; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #ff4800;
+  width: 20%;
+}
+.quantity {
+  /* border: 1px solid white; */
+  height: 100%;
+  width: 20%;
+  color: white;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.quantity > h2 {
+  /* border: 1px solid white; */
+  border-radius: 3px;
+  box-shadow: 0px 5px 10px black;
+  padding: 10px auto;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.quantity > h2:hover {
+  cursor: pointer;
+  color: red;
+}
+.quantity > h3 {
+  color: #ff4800;
+}
+.cart-total {
+  /* border: 1px solid white; */
+  height: 100%;
+  width: 20%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.sub-total {
+  /* border: 1px solid white; */
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 1.3rem;
+  padding-right: 17%;
+}
+.sub-total > button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #ff4800;
+  width: 25%;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.544);
+  font-weight: bold;
+}
+.remove-cart {
+  color: #ff4800;
+  /* border: 1px solid white; */
+  width: 5%;
+}
+.remove-cart > svg:hover {
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+.login {
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form {
+  /* border: 1px solid white; */
+  /* background-color: white; */
+
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px black;
+  text-align: center;
+  background-color: #212529;
+  overflow: hidden;
+}
+.login-form > form {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #212529;
+}
+.login-form > form > input {
+  margin: 10px;
+
+  width: 80%;
+  padding: 1vmax;
+  border: 2px solid #ff4800;
+  background-color: #212529;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #ff4800;
+}
+
+.login-form > form > button {
+  width: 60%;
+  color: black;
+  padding: 10px;
+  background-color: #ff4800;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid #343a40;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.login-form > form > button:hover {
+  background-color: #f77f00;
+  color: black;
+}
+
+.login-form > p {
+  color: white;
+}
+.login-form > a {
+  margin-top: 10px;
+  color: #f77f00;
+  text-decoration: none;
+}
+.login-form > a:hover {
+  color: black;
+}
+.show-password {
+  /* border: 1px solid black; */
+  align-self: flex-start;
+  margin-left: 55px;
+  font-size: 0.8rem;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .login {
+    border-top: 1px solid rgb(111, 79, 79);
+    height: 85vh;
+    padding: 0;
+    margin: 0;
+  }
+  .login-form {
+    border: 1px solid white;
+    width: 80%;
+    height: 60%;
+    padding: 10px;
+  }
+  .show-password {
+    margin-left: 30px;
+  }
+}

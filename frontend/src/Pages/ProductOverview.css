@@ -1,0 +1,143 @@
+.product-overview {
+  /* border: 2px solid red; */
+  display: flex;
+
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: #212529;
+}
+.overview-right {
+  display: flex;
+  /* border: 2px solid white; */
+  width: 50%;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+  /* display: none; */
+  padding-top: 30px;
+  color: #ff4800;
+  font-family: "Roboto", sans-serif;
+}
+span {
+  color: white;
+}
+.overview-right > button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #ff4800;
+  width: 60%;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.544);
+  font-weight: bold;
+}
+.overview-header {
+  /* border: 1px solid white; */
+  display: flex;
+}
+.title {
+  /* border: 1px solid white; */
+  width: 70%;
+}
+.desc {
+  width: 100%;
+  /* border: 1px solid white; */
+  min-height: 100px;
+  margin-top: 10px;
+  letter-spacing: 3px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.overview-header > div > p {
+  /* border: 1px solid white; */
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.overview-header > div > h2 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.8rem;
+}
+.price {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.overview-left {
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 30px;
+}
+
+.overview-left-poster {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  width: 70%;
+  height: 70%;
+
+  background-color: #212529;
+  box-shadow: 0px 5px 15px black;
+}
+.xc {
+  width: 100%;
+  height: 80%;
+}
+.alternateImages {
+  display: flex;
+  height: 20%;
+  overflow: auto;
+  border-top: 1px solid white;
+}
+.alternateImages > img {
+  width: 20%;
+  height: 100%;
+  margin-right: 5px;
+}
+.alternateImages::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .product-overview {
+    flex-direction: column;
+  }
+  .overview-left {
+    width: 100%;
+    margin: 0px;
+    height: 40%;
+    /* border: 1px solid white; */
+  }
+  .overview-left-poster {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .xc {
+    width: 100%;
+    height: 80%;
+    margin: 0;
+  }
+  .overview-right {
+    margin: 0px;
+    align-items: center;
+
+    width: 100%;
+    padding-left: 5px;
+  }
+  .overview-header {
+    /* border: 1px solid white; */
+    width: 100%;
+  }
+}
